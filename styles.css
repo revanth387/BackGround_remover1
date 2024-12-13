@@ -1,0 +1,129 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .upload-area {
+    margin-bottom: 20px;
+  }
+  
+  #fileInput {
+    margin-bottom: 10px;
+  }
+  
+  #removeBtn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #removeBtn:hover {
+    background-color: #ff4500;
+  }
+  
+  #outputImage {
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    animation: scaleUp 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    #removeBtn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    #removeBtn {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
+  #downloadBtn {
+    padding: 10px 20px;
+    background-color: #32CD32; /* Lime Green */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.1s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  #downloadBtn .icon {
+    font-size: 20px;
+  }
+  
+  #downloadBtn:hover {
+    background-color: #228B22; /* Forest Green */
+  }
+  
+  #downloadBtn:active {
+    transform: scale(0.95); /* Button shrink animation on click */
+  }
+  
+  @keyframes buttonClick {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+    
